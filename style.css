@@ -1,0 +1,399 @@
+* {
+  font-family: "Mulish", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.navbar {
+  font-weight: 700;
+}
+.navbar-logo {
+  background-color: rgb(69, 143, 246);
+  color: rgb(255, 255, 255);
+  height: 41px;
+  width: 41px;
+  border: none;
+  border-radius: 50px;
+  font-size: 26px;
+  line-height: 33px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.logo-name {
+  color: rgb(35, 51, 72);
+  font-size: 24px;
+  line-height: 30px;
+  padding-top: 5px;
+}
+
+.footer-logo {
+  background-color: rgb(255, 255, 255);
+  color: rgb(69, 143, 246);
+  height: 41px;
+  width: 41px;
+  border: none;
+  border-radius: 50px;
+  font-size: 26px;
+  line-height: 33px;
+  margin-right: 10px;
+  text-align: center;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.footer-name {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  line-height: 30px;
+  padding-top: 5px;
+}
+
+.options {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 38px;
+}
+
+para1 {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 32px;
+  color: rgb(125, 121, 135);
+}
+
+para2 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+  color: rgb(125, 121, 135);
+}
+
+.heading {
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+  line-height: 56px;
+}
+.heading-1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 56px;
+}
+.heading-1-review {
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.button {
+  background-color: rgb(69, 143, 246);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 200px;
+  height: 58px;
+}
+
+hr {
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  width: 5%;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.card-services {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 10px 40px 50px 0px rgba(222, 223, 229, 0.4);
+}
+.card-services-img-top-services {
+  width: 90px;
+  min-height: 120px;
+}
+
+.card-article {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 10px 40px 50px 0px rgba(222, 223, 229, 0.4);
+  border: none;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.card-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.card-container {
+  position: relative;
+}
+.card-background {
+  margin-top: -147px;
+}
+
+.learn-more {
+  border: 1.4px solid rgb(69, 143, 246);
+  color: rgb(69, 143, 246);
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  width: 200px;
+}
+
+.arrow {
+  color: rgb(69, 143, 246);
+  cursor: pointer;
+}
+
+.download {
+  border: 1.4px solid rgb(69, 143, 246);
+  color: rgb(69, 143, 246);
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  width: 232px;
+}
+
+.review {
+  color: rgb(255, 255, 255);
+}
+
+.reviews {
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+}
+
+.actual-review {
+  color: rgb(255, 255, 255);
+}
+
+.profile {
+  width: 50%;
+}
+.profile-image {
+  height: 90px;
+  width: 90px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+}
+.profile-review {
+  width: 50%;
+}
+
+.dot1 {
+  color: rgb(69, 143, 246);
+  cursor: pointer;
+}
+
+.dot {
+  color: rgb(69, 143, 246);
+  opacity: 30%;
+  cursor: pointer;
+}
+
+.navigation {
+  font-size: xx-large;
+}
+
+.leftarrow {
+  opacity: 30%;
+}
+
+.side-image-5 {
+  right: 105px;
+  top: -13px;
+  z-index: 2;
+}
+
+.side-image-6 {
+  bottom: 30px;
+  left: 94px;
+  z-index: -1;
+}
+
+.side-image-7 {
+  top: 150px;
+  left: 117px;
+}
+
+.footer {
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+  color: rgb(255, 255, 255);
+}
+
+.column-1 {
+  width: 50%;
+}
+
+.footer-image {
+  z-index: -1;
+  bottom: -40px;
+}
+
+@media (max-width: 1400px) {
+  .side-image-6 {
+    bottom: 30px;
+    left: 69px;
+    z-index: -1;
+  }
+}
+@media (max-width: 1300px) {
+  .heading {
+    font-size: 38px;
+  }
+  .side-image {
+    width: 55px;
+  }
+  .image2 {
+    max-width: 450px;
+    height: auto;
+  }
+  .image1 {
+    max-width: 80%;
+  }
+  .profile {
+    width: auto;
+  }
+  .profile-review {
+    width: auto;
+  }
+  .side-image-5 {
+    right: 98px;
+    top: -7px;
+    z-index: 2;
+    width: 95px;
+  }
+  .side-image-6 {
+    bottom: 30px;
+    left: 91px;
+    z-index: -1;
+    width: 85px;
+  }
+}
+@media (max-width: 1200px) {
+  .side-image-5 {
+    right: 75px;
+    top: -7px;
+    z-index: 2;
+    width: 95px;
+  }
+  .side-image-6 {
+    bottom: 30px;
+    left: 70px;
+    z-index: -1;
+    width: 85px;
+  }
+}
+@media (max-width: 768px) {
+  .image1 {
+    max-width: 80%;
+    height: auto;
+  }
+  .image2 {
+    max-width: 80%;
+    height: auto;
+  }
+  .heading {
+    font-size: 19px;
+    line-height: 18px;
+  }
+  .heading-1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .heading-1-review {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .logo-name {
+    font-size: 20px;
+  }
+  .navbar-logo {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    padding: 10px;
+  }
+  .para1 {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 0;
+    text-align: center;
+    max-width: 300px;
+  }
+  .para2 {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .button {
+    width: 150px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .card-services {
+    width: 90%;
+    border-radius: 20px;
+  }
+  .card-services-title {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .card-services-text {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .card-article {
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid rgb(125, 121, 135);
+  }
+  .card-img-top-article {
+    width: 100%;
+  }
+  .learn-more {
+    width: 164px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .download {
+    width: 174px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .profile {
+    width: auto;
+  }
+  .profile-image {
+    height: 70px;
+    width: 70px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 40px;
+  }
+  .profile-review {
+    width: auto;
+  }
+  .navigation {
+    font-size: large;
+  }
+  .column-1 {
+    width: 90%;
+  }
+}

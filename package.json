@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "sass": "^1.71.1"
+  },
+  "name": "trafalgar-landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch --no-source-map main.scss style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
