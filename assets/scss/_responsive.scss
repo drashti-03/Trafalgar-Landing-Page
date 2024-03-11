@@ -1,0 +1,226 @@
+@media (max-width:1400px) {
+    .side-image-6 {         
+        bottom: 30px;
+        left: 69px;
+        z-index: -1;        
+    }
+    
+}
+
+
+@media (max-width:1300px) {
+    .heading {
+        font-size: 38px;
+    }
+
+    .side-image {
+        width: 55px;
+    }
+
+    .image2 {
+        max-width: 450px;
+        height: auto;
+    }
+
+    .image1 {
+        max-width: 80%;
+    }
+
+    .side-image-5 {
+        right: 98px;
+        top: -7px;
+        z-index: 2;
+        width: 95px;
+
+    }
+
+    .side-image-6 {         
+        bottom: 30px;
+        left: 91px;
+        z-index: -1;  
+        width: 85px;      
+    }
+    
+}
+
+@media (max-width:1200px) {
+    .side-image-5 {
+        right: 75px;
+        top: -7px;
+        z-index: 2;
+        width: 95px;
+
+    }
+
+    .side-image-6 {         
+        bottom: 30px;
+        left: 70px;
+        z-index: -1;  
+        width: 85px;      
+    }
+}
+
+@media (max-width: 992px){
+     .profile {
+        width: 100%;
+
+            &-review {
+                width: 100%;
+            }
+    }
+
+}
+
+@media (max-width:768px){
+    .image1 {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .image2 {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .heading {
+        font-size: 19px;
+        line-height: 18px;
+        
+
+            &-1{        
+                font-size: 20px;
+                font-weight: $weight;
+                line-height: 30px;
+
+                    &-review {
+                        font-size: 20px;
+                        font-weight: $weight;
+                        line-height: 30px;
+                    }
+            
+            }
+    }
+
+    .logo-name {
+        font-size: 20px;
+
+    }
+
+    .navbar-logo {
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+        align-self: center;
+        padding: 10px;
+
+    }
+
+    .para1 {
+        font-size: 13px;
+        line-height: 16px; 
+        margin-bottom: 0;
+        text-align: center;
+        max-width: 300px;
+    }
+
+    .para2 {
+        font-size: 13px;
+        line-height: 20px; 
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .button {
+        width: 150px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .card-services {
+        width: 90%;
+        border-radius: 20px;
+        
+        
+
+            &-title {
+                padding: 0;
+                margin: 0;
+                font-size: 15px;
+                line-height: 23px;
+            }
+
+            &-text {
+                padding: 0;
+                margin: 0;
+                font-size: 13px;
+                line-height: 22px;
+            }
+
+
+    }
+
+    .card-article {
+        width: 90%;
+        border-radius: 20px;
+       
+        
+        
+    }
+
+    .card-img-top-article {
+        width: 100%;
+        
+    }
+
+    .learn-more {
+        width: 164px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .download {
+        width: 174px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .profile {
+        width: 100%;
+    
+        &-image {
+            height: 70px;
+            width: 70px;
+            border: 2px solid $white;
+            border-radius: 40px;
+        }
+    
+        &-review {
+            width: 100%;
+        }
+
+    
+    
+    }
+
+    .navigation {
+        font-size: large;
+    }
+
+    .column-1 {
+        width: 90%;
+    }
+    
+    .options {
+        line-height: 30px;
+    }
+
+
+
+}
+
+@media (max-width:576px) {
+    .card-article {
+        width: 75%;
+    }
+    
+}

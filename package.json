@@ -1,12 +1,13 @@
 {
   "dependencies": {
+    "git": "^0.1.5",
     "sass": "^1.71.1"
   },
   "name": "trafalgar-landing-page",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile": "sass --watch --no-source-map main.scss style.css"
+    "compile": "sass --watch --no-source-map ./assets/scss/main.scss ./assets/css/style.css"
   },
   "author": "",
   "license": "ISC",
