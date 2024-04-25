@@ -1,7 +1,13 @@
+@charset "UTF-8";
 * {
   font-family: "Mulish", sans-serif;
   box-sizing: border-box;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar {
@@ -25,6 +31,7 @@
   font-size: 24px;
   line-height: 30px;
   padding-top: 5px;
+  font-weight: 700;
 }
 
 .footer-logo {
@@ -53,25 +60,36 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 38px;
+  cursor: pointer;
 }
 
 .title {
   font-size: 18px;
 }
 
-para1 {
+.para1 {
   font-size: 21px;
   font-weight: 300;
   line-height: 32px;
   color: rgb(125, 121, 135);
 }
 
-para2 {
+.para2,
+.para4,
+.para3 {
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
   text-align: center;
   color: rgb(125, 121, 135);
+}
+
+.para3 {
+  max-width: 952px;
+}
+
+.para4 {
+  color: rgb(255, 255, 255);
 }
 
 .heading {
@@ -81,7 +99,7 @@ para2 {
   line-height: 56px;
 }
 .heading-1 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 56px;
 }
@@ -92,7 +110,9 @@ para2 {
   line-height: 56px;
 }
 
-.button {
+.button,
+.learn-more,
+.download {
   background-color: rgb(69, 143, 246);
   color: rgb(255, 255, 255);
   border: none;
@@ -100,15 +120,23 @@ para2 {
   font-size: 18px;
   font-weight: 700;
   width: 200px;
-  height: 58px;
+  line-height: 56px;
+}
+
+.section2 {
+  margin-top: 120px;
 }
 
 hr {
   color: rgb(0, 0, 0);
   opacity: 1;
-  width: 5%;
+  width: 15%;
   align-self: center;
   border-radius: 5px;
+}
+
+.hr-article {
+  width: 8%;
 }
 
 .card-services {
@@ -119,6 +147,10 @@ hr {
 .card-services-img-top-services {
   width: 90px;
   min-height: 120px;
+}
+
+.card-img-top-services {
+  min-height: 95px;
 }
 
 .card-article {
@@ -137,6 +169,15 @@ hr {
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
+  color: rgb(125, 121, 135);
+  margin: auto 0 0 0;
+}
+.card-text-article {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 250px;
+  overflow: hidden;
 }
 .card-container {
   position: relative;
@@ -145,13 +186,30 @@ hr {
   margin-top: -147px;
 }
 
-.learn-more {
+span {
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.learn-more,
+.download {
+  max-width: 250px;
   border: 1.4px solid rgb(69, 143, 246);
   color: rgb(69, 143, 246);
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  width: 200px;
+  background-color: transparent;
+  z-index: 3;
+}
+.learn-more:hover,
+.download:hover {
+  color: rgb(69, 143, 246);
+  border-color: rgb(69, 143, 246);
+}
+
+button {
+  cursor: pointer;
 }
 
 .arrow {
@@ -159,21 +217,22 @@ hr {
   cursor: pointer;
 }
 
-.download {
-  border: 1.4px solid rgb(69, 143, 246);
-  color: rgb(69, 143, 246);
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  width: 232px;
+.svgarrow {
+  align-self: center;
 }
 
-.review {
+.download {
+  max-width: 232px;
+}
+
+.hr-review {
   color: rgb(255, 255, 255);
+  width: 8%;
 }
 
 .reviews {
-  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 32px;
 }
 
 .actual-review {
@@ -193,15 +252,53 @@ hr {
   width: 50%;
 }
 
-.dot1 {
-  color: rgb(69, 143, 246);
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
   cursor: pointer;
 }
 
-.dot {
-  color: rgb(69, 143, 246);
-  opacity: 30%;
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
   cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:before {
+  content: "•";
+  font-size: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  opacity: 0.3;
+  color: rgb(69, 143, 246);
+}
+
+.slick-dots .slick-active button:before {
+  opacity: 1;
+}
+
+.slick-dots li button::after {
+  color: rgb(69, 143, 246);
+}
+
+ul {
+  padding-inline-start: 0px;
+  margin-bottom: 0px;
 }
 
 .navigation {
@@ -226,17 +323,42 @@ hr {
 }
 
 .footer {
-  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
   color: rgb(255, 255, 255);
 }
-
-.column-1 {
-  width: 50%;
-}
-
 .footer-image {
   z-index: -1;
-  bottom: -40px;
+  bottom: -180px;
+  right: 5%;
+}
+.footer-logo {
+  cursor: pointer;
+}
+.footer-logo-link {
+  text-decoration: none;
+  color: rgb(69, 143, 246);
+}
+.footer-name {
+  cursor: pointer;
+  font-weight: 700;
+}
+.footer-container {
+  margin-top: 150px;
+}
+
+.readmore {
+  color: rgb(69, 143, 246);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.text {
+  max-width: 391px;
+}
+
+.section-6 {
+  margin-top: 130px;
 }
 
 @media (max-width: 1400px) {
@@ -258,7 +380,7 @@ hr {
     height: auto;
   }
   .image1 {
-    max-width: 80%;
+    max-width: 100%;
   }
   .side-image-5 {
     right: 98px;
@@ -286,6 +408,27 @@ hr {
     z-index: -1;
     width: 85px;
   }
+  .footer-container {
+    margin-top: 50px;
+  }
+  .section2 {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .section2 {
+    margin-top: 10px;
+  }
+  .image1 {
+    max-width: 100%;
+  }
+  .card-img-top-services {
+    min-height: 75px;
+    max-height: 75px;
+  }
+  .section-6 {
+    margin-top: 40px;
+  }
 }
 @media (max-width: 992px) {
   .profile {
@@ -294,19 +437,25 @@ hr {
   .profile-review {
     width: 100%;
   }
+  .image1 {
+    max-width: 80%;
+  }
+  .card-img-top-services {
+    min-height: 65px;
+    max-height: 65px;
+  }
+  .section2 {
+    margin-top: 70px;
+  }
 }
 @media (max-width: 768px) {
   .image1 {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
   }
   .image2 {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
-  }
-  .heading {
-    font-size: 19px;
-    line-height: 18px;
   }
   .heading-1 {
     font-size: 20px;
@@ -328,23 +477,20 @@ hr {
     align-self: center;
     padding: 10px;
   }
-  .para1 {
-    font-size: 13px;
-    line-height: 16px;
-    margin-bottom: 0;
-    text-align: center;
-    max-width: 300px;
-  }
-  .para2 {
-    font-size: 13px;
+  .para2,
+  .para3,
+  .para4 {
+    font-size: 14px;
     line-height: 20px;
     margin-bottom: 0;
     text-align: center;
   }
-  .button {
-    width: 150px;
-    height: 28px;
+  .button,
+  .learn-more,
+  .download {
+    max-width: 150px;
     font-size: 12px;
+    line-height: 28px;
   }
   .card-services {
     width: 90%;
@@ -362,21 +508,35 @@ hr {
     font-size: 13px;
     line-height: 22px;
   }
+  .card-img-top-services {
+    max-height: 50px;
+    min-height: 50px;
+  }
+  .card-title {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .card-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
   .card-article {
     width: 90%;
-    border-radius: 20px;
+    border-radius: 16px;
+  }
+  .card-article-title {
+    width: 90%;
+    font-size: 15px;
+  }
+  .card-text-article {
+    width: 200px;
   }
   .card-img-top-article {
     width: 100%;
   }
-  .learn-more {
-    width: 164px;
-    height: 28px;
-    font-size: 12px;
-  }
+  .learn-more,
   .download {
-    width: 174px;
-    height: 28px;
+    max-width: 164px;
     font-size: 12px;
   }
   .profile {
@@ -391,18 +551,58 @@ hr {
   .profile-review {
     width: 100%;
   }
-  .navigation {
-    font-size: large;
-  }
-  .column-1 {
-    width: 90%;
+  .reviews {
+    border-radius: 16px;
   }
   .options {
     line-height: 30px;
+    font-size: 14px;
+  }
+  .svgarrow {
+    height: 12px;
+  }
+  .readmore {
+    font-size: 13px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .copyrights {
+    font-size: 13px;
+  }
+  .footer-name {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .footer-logo {
+    font-size: 20px;
+    height: 31px;
+    width: 31px;
+    border-radius: 40px;
+  }
+  .footer-container {
+    margin-top: 35px;
+  }
+  .section2 {
+    margin-top: 50px;
   }
 }
 @media (max-width: 576px) {
   .card-article {
     width: 75%;
+  }
+  .logof {
+    font-size: 14px;
+  }
+  .heading {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .para1 {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    max-width: 300px;
   }
 }
